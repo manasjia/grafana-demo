@@ -1,0 +1,12 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'default'
+
+receivers:
+  - name: 'default'
+    # For test, just print to log
+    webhook_configs:
+      - url: 'http://13.222.61.22:5001/'
+
